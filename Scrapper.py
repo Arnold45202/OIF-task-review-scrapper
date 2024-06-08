@@ -50,7 +50,7 @@ with open(path_to_csv, 'w', encoding="utf-8") as csvFile:
             EC.presence_of_all_elements_located((By.XPATH, "//div[@data-reviewid]"))
         )
 
-        # since it is separated we can 
+        # since it is separated we can iterate through the reviews
         for review in reviews:
             if scraped_reviews >= reviews_to_scrape:
                 break
